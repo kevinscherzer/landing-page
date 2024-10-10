@@ -1,4 +1,45 @@
-p {
-    color: gray;
-    font-size: 32px;
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+*::before,
+*::after
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.hero {
+    background-color: #1f2937;
+    padding: 0 50px;
+}
+
+.hero.all {
+    display: flex;
+    flex-direction: column;
+}
+
+.header.all {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header.logo {
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+.header.links {
+    list-style-type: none;
+    display: flex;
+}
+
+.header.link {
+    text-decoration: none;
+    font-size: 18px;
+    color: #e5e7eb;
 }
